@@ -3,6 +3,7 @@
     height: 68px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 .header-nav{
     display: flex;

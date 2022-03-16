@@ -14,8 +14,6 @@ function App() {
           <main className="main">
               <Routes>
                   <Route path="/" exact element={<Home />} />
-                  {/*
-                  <Route path="/accommodation/:id" exact element={<Accommodation />} />*/}
                   <Route path="/about" exact element={<About />} />
                   <Route path="/404" exact element={<Error />} />
                   <Route path="*" element={<Error />} />
