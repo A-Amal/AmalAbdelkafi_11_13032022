@@ -1,0 +1,59 @@
+.page-error404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top:169px
+}
+.page-error404-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 288px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end:0;
+    color: #FF6060;
+}
+.page-error404-secondary{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: #FF6060;
+    margin-block-start: 0;
+    margin-block-end:0;
+}
+.page-error404-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 159px;
+    margin-top: 182px;
+    color: #FF6060;
+    text-decoration: underline;
+}
+@media screen and (min-width:375px ) and (max-width:675px ){
+    .page-error404-title{
+        font-size: 220px;
+        margin: 0  20px;
+    }
+    .page-error404-secondary{
+        font-size: 24px;
+        margin: 0  20px;
+    }
+}
+@media screen and (max-width:375px ) {
+    .page-error404-title {
+        font-size: 96px;
+    }
+    .page-error404-secondary {
+        font-size: 18px;
+        margin: 0  58px;
+    }
+    .page-error404-link {
+        font-size: 14px;
+    }
+}

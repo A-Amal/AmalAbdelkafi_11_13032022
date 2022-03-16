@@ -3,8 +3,6 @@
     justify-content: center;
     background-color: black;
     height: 209px;
-   /* position:fixed;
-    bottom:0;*/
     width: 100%;
 }
 .footer-container {
@@ -15,3 +13,18 @@
      margin:  auto;
      color: white;}
 
+@media screen and (max-width:375px ) {
+    .footer-logo{
+        height: 39px;
+        width: 122px;
+    }
+    .footer-copyright{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .footer-container{
+
+    }
+}
