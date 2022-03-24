@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Error from "../pages/Error";
 import Home from  "../pages/Home"
 import About from "../pages/About";
+import Apartment from "../pages/Apartment";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <main className="main">
               <Routes>
                   <Route path="/" exact element={<Home />} />
+                  <Route path="/appartement/:id" exact element={< Apartment />} />
                   <Route path="/about" exact element={<About />} />
                   <Route path="/404" exact element={<Error />} />
                   <Route path="*" element={<Error />} />
