@@ -3,7 +3,8 @@
 }
 
 .dropdown-header{
-    width: 1023px;
+    /*width: 1023px;*/
+    width: 83%;
     height: 47px;
     border-radius: 5px;
     background-color: #FF6060;
@@ -29,7 +30,7 @@
     margin: auto 20px;
 }
 .dropdown-content{
-    width: 1023px;
+    width: 83%;
     height: auto;
     border-radius: 5px;
     background-color: #F7F7F7;
@@ -41,7 +42,7 @@
 }
 
 .dropdown-content-wrapper{
-    width: 978px;
+    width: 90%;
     text-align : left;
     padding: 20px;
     font-weight: 400;

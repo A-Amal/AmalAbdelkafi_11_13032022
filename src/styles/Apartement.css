@@ -1,0 +1,102 @@
+.page-apartment{
+
+    width:1300px;
+    height: 643px;
+    margin: auto;
+}
+.apartment-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.apartment-header-1,.apartment-header-2 {
+    display: flex;
+    flex-direction: column;
+}
+.apartment-header-title{
+    width: 635px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+    line-height: 51px;
+    align-items: flex-end;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.apartment-header-secondary{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    line-height: 26px;
+    align-items: flex-end;
+    margin-block-start: 0.5em;
+    margin-block-end: 0 ;
+}
+.apartment-header-tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    padding-inline-start: 0;
+}
+.apartment-header-tag{
+    width: 115px;
+    height: 25px;
+    background: #FF6060;
+    border-radius: 10px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height:20px;
+    text-align: center;
+    margin-right: 10px;
+}
+.apartment-header-2{
+    padding-right: 30px;
+}
+.apartment-header-host{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.apartment-header-host-name{
+    width: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height:26px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FF6060;
+    margin-right: 10px;
+}
+.apartment-header-host-picture img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.apartment-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.apartment-content-description{
+    width: 700px !important;
+}
+.apartment-content-equipments {
+    width: 700px !important;
+}
+.apartment-content-equipments ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.apartment-content-description.dropdown-header, .apartment-content-equipments.dropdown-content{
+   margin: 0 !important;
+}
+.apartment-content-equipment{
+    margin-left: -40px;
+}

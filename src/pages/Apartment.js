@@ -1,7 +1,9 @@
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import "../styles/Home.css"
+import "../styles/Apartement.css"
 import Dropdown from "../components/Dropdown";
+import Stars from "../components/Stars";
 
 
 function Apartment(){
@@ -40,8 +42,12 @@ function Apartment(){
 
                     <div className="apartment-header">
                         <div className="apartment-header-1">
-                            <h1 className="apartment-header-title">{title}</h1>
-                            <p className="apartment-header-secondary">{location}</p>
+                            <h1 className="apartment-header-title">
+                                {title}
+                            </h1>
+                            <p className="apartment-header-secondary">
+                                {location}
+                            </p>
                             <ul className="apartment-header-tags">
                                 {tags && tags.map((tag, index) => (
                                     <li className="apartment-header-tag" key={`tag-${index}`}>{tag}</li>
@@ -50,16 +56,14 @@ function Apartment(){
                         </div>
                         <div className="apartment-header-2">
                             <div className="apartment-header-host">
-                                <div className="apartment-header-host-name">{host && host.name}</div>
+                                <div className="apartment-header-host-name">
+                                    {host && host.name}
+                                </div>
                                 <div className="apartment-header-host-picture">
                                     <img src={host && host.picture} alt={host && host.name}/>
                                 </div>
                             </div>
-                            {/*
-                        <Rating stars={getResult.rating} />
-
-    */}
-
+                            <Stars rating={rating} />
                         </div>
                     </div>
 
@@ -70,7 +74,7 @@ function Apartment(){
                             </Dropdown>
                         </div>
                         <div className="apartment-content-equipments">
-                            <Dropdown title="Équipements">
+                            <Dropdown title="Équipements" >
                                 <ul>
                                     {equipments && equipments.map((equipment, index) => (
                                         <li key={`equipment-${index}`} className="apartment-content-equipment">

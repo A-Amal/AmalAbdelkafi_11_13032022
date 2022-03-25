@@ -7,7 +7,6 @@ function Dropdown({title, children}){
     const [show, setShow] =useState(false)
     return(
         <div className="dropdown">
-            {console.log(show)}
             <div className="dropdown-header" >
                 <span>{title}</span>
                 <img className={show ? 'down' : 'up'} src={chevronDown} alt="Chevron" onClick={()=>setShow(!show)}/>
