@@ -7,7 +7,8 @@
 .apartment-header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-top: 30px;
 }
 .apartment-header-1,.apartment-header-2 {
     display: flex;
@@ -38,7 +39,6 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-
     padding-inline-start: 0;
 }
 .apartment-header-tag{
@@ -54,9 +54,7 @@
     text-align: center;
     margin-right: 10px;
 }
-.apartment-header-2{
-    padding-right: 30px;
-}
+
 .apartment-header-host{
     display: flex;
     flex-direction: row;
@@ -85,10 +83,10 @@
     justify-content: space-between;
 }
 .apartment-content-description{
-    width: 700px !important;
+    width: 600px !important;
 }
 .apartment-content-equipments {
-    width: 700px !important;
+    width: 600px !important;
 }
 .apartment-content-equipments ul{
     margin-block-start: 0;
@@ -99,4 +97,11 @@
 }
 .apartment-content-equipment{
     margin-left: -40px;
+}
+@media screen and (min-width:375px ) and (max-width:675px ) {
+
+
+}
+@media screen and (max-width:375px ) {
+
 }

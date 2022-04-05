@@ -3,12 +3,9 @@
 }
 
 .dropdown-header{
-    /*width: 1023px;*/
-    width: 83%;
     height: 47px;
     border-radius: 5px;
     background-color: #FF6060;
-    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,7 +27,7 @@
     margin: auto 20px;
 }
 .dropdown-content{
-    width: 83%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     background-color: #F7F7F7;

@@ -8,7 +8,7 @@ function About(){
             <div className="page-about-header">
                 <img src={about} alt="landscape" />
             </div>
-            <div className="page-about-us-content">
+            <div className="page-about-content">
                 <Dropdown title="Fiabilité">
                     Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.
                 </Dropdown>

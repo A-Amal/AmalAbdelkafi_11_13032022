@@ -4,14 +4,13 @@ import "../styles/Home.css"
 import "../styles/Apartement.css"
 import Dropdown from "../components/Dropdown";
 import Stars from "../components/Stars";
+import SlideShow from "../components/SlideShow";
 
 
 function Apartment(){
     const params = useParams()
     const [houseDetails, setHouseDetails] = useState({})
     const [error, setError] = useState(null)
-    //const [hostData, setHostData] = useState(null)
-    const [isDataLoading, setDataLoading] = useState(false)
 
     useEffect(async () => {
 
@@ -39,7 +38,7 @@ function Apartment(){
     const { title, pictures, description, host, rating, location, equipments, tags} = houseDetails
     return (
                 <div className="page-apartment">
-
+                    { pictures && <SlideShow  pictures={pictures} /> }
                     <div className="apartment-header">
                         <div className="apartment-header-1">
                             <h1 className="apartment-header-title">

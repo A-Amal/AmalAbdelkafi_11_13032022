@@ -3,13 +3,22 @@
     text-align: center;
 }
 .page-about-header img{
-    width: 1300px;
+    width: 90%;
     height: 223px;
     border-radius: 10px;
     object-fit: cover;
     margin: 61px auto;
 }
-.page-about-header{
+.page-about-content{
+    width: 80%;
+    margin: auto;
+}
+@media screen and (min-width:375px ) and (max-width:675px ) {
 
-
+}
+@media screen and (max-width:375px ) {
+    .page-about-content{
+        width: 90%;
+        margin: auto;
+    }
 }
