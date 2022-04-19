@@ -4,14 +4,21 @@
     margin: auto;
 }
 .apartment-header{
+    width: 90%;
+    margin: 30px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 30px;
 }
 .apartment-header-1,.apartment-header-2 {
     display: flex;
     flex-direction: column;
+}
+.apartment-header-1{
+    width: 70%;
+}
+.apartment-header-2{
+    width: 30%;
 }
 .apartment-header-title{
     width: 635px;
@@ -77,6 +84,8 @@
     border-radius: 50%;
 }
 .apartment-content{
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -97,10 +106,92 @@
 .apartment-content-equipment{
     margin-left: -40px;
 }
+ul.rating{
+    justify-content: flex-end;
+}
 @media screen and (min-width:375px ) and (max-width:675px ) {
+    .apartment-header{
+        flex-direction: column;
+    }
+    .apartment-header-title{
+        width: 90%;
+        font-size: 24px;}
+    .apartment-header-secondary{
+        font-size: 18px;
+    }
+    .apartment-content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .apartment-header-1, .apartment-header-2{
+        width: 100%;
 
+    }
+    .apartment-header-2{
+        flex-direction: row-reverse;
+        justify-content: space-between
+    }
+    .apartment-content-description{
+        width: 90% !important;
+        margin: auto;
+    }
+    .apartment-content-equipments {
+        width: 90% !important;
+        margin: auto;
+    }
+    .apartment-header-host{
+        width: 50%;
+    }
+    .apartment-header-host-picture img {
+        width: 45px;
+        height: 45px;
+    }
+    .apartment-header-host-name{
+        font-size: 14px;
 
+    }
+    ul.rating{
+        justify-content: flex-start;
+    }
 }
 @media screen and (max-width:375px ) {
+    .apartment-header {
+        flex-direction: column;
+    }
 
+    .apartment-header-title {
+        width: 90%;
+        font-size: 18px;
+    }
+    .apartment-header-secondary{
+        font-size: 14px;
+    }
+    .apartment-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .apartment-content-description{
+        width: 90% !important;
+        margin: auto;
+    }
+    .apartment-content-equipments {
+        width: 90% !important;
+        margin: auto;
+    }
+    .apartment-header-host-picture img {
+        width: 32px;
+        height: 32px;
+    }
+    .apartment-header-host-name{
+        font-size: 12px;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .apartment-header-2{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .apartment-header-1, .apartment-header-2{
+        width: 100%;
+    }
 }

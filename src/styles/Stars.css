@@ -8,3 +8,15 @@
 .rating-star{
     margin-left: 10px;
 }
+@media screen and (min-width:375px ) and (max-width:675px ) {
+    .rating-star{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width:375px ){
+    .rating-star{
+        width: 15px;
+        height: 15px;
+    }
+}

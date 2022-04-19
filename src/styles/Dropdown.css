@@ -47,3 +47,18 @@
     font-size: 24px;
     color: #FF6060;
 }
+@media screen and (min-width:375px ) and (max-width:675px ) {
+
+}
+@media screen and (max-width:375px ){
+    .dropdown-header span{
+        font-size: 18px;
+    }
+    .dropdown-header img{
+        width: 20px;
+        height: 20px;
+    }
+    .dropdown-content-wrapper{
+        font-size: 18px;
+    }
+}

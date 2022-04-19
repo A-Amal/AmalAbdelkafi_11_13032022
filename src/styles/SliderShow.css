@@ -1,7 +1,7 @@
 
 .slider-container {
     height: 415px;
-    width: 100%;
+    width: 90%;
     position: relative;
     margin: auto;
     overflow: hidden;
@@ -56,6 +56,13 @@
 }
 @media screen and (min-width:375px ) and (max-width:675px ) {
 
+    .slider-container .slider-container img {
+        height: 255px;
+    }
 
 }
-@media screen and (max-width:375px ) {}
+@media screen and (max-width:375px ) {
+    .slider-container .slider-container img{
+        height: 255px;
+    }
+}
