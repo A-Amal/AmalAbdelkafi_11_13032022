@@ -54,3 +54,8 @@
     line-height:26px;
     color: white;
 }
+@media screen and (min-width:375px ) and (max-width:675px ) {
+
+
+}
+@media screen and (max-width:375px ) {}

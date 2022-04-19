@@ -19,15 +19,16 @@ function SliderShow({pictures}) {
     return (
         <div className="slider-container">
             <SliderContent activeIndex={activeIndex} sliderImage={pictures} />
-            <Arrows
-                prevSlide={() =>
-                    setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-                }
-                nextSlide={() =>
-                    setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-                }
-            />
-
+            {pictures.length > 1 &&
+                <Arrows
+                    prevSlide={() =>
+                        setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+                    }
+                    nextSlide={() =>
+                        setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+                    }
+                />
+            }
         </div>
     );
 }

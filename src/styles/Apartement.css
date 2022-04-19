@@ -1,7 +1,6 @@
 .page-apartment{
-
-    width:1300px;
-    height: 643px;
+    width:100%;
+    height: auto;
     margin: auto;
 }
 .apartment-header{
