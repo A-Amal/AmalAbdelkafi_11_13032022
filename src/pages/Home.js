@@ -2,6 +2,7 @@ import homeImg from '../assets/home.jpg'
 import data from '../assets/data.json'
 import '../styles/Home.css'
 import {Link} from "react-router-dom";
+import Appartement from "../components/Appartement";
 
 function Home(){
     return(
@@ -12,16 +13,7 @@ function Home(){
             </div>
             <div className="page-home-list">
                 {data.map((item, index) => (
-                    <Link to={`/appartement/${item.id}`} key={index} state={item}>
-                        <div className="card">
-                            <div className="card-image">
-                                <img src={item.cover} alt={item.title} />
-                            </div>
-                            <div className="card-title">
-                                {item.title}
-                            </div>
-                        </div>
-                    </Link>
+                    <Appartement item={item} index={index}/>
                 ))}
             </div>
 
