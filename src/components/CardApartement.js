@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-function Appartement({item, index}){
+function CardApartement({item, index}){
     return(
         <>
             <Link to={`/appartement/${item.id}`} key={index} state={item}>
@@ -16,4 +16,4 @@ function Appartement({item, index}){
         </>
     )
 }
-export default Appartement
+export default CardApartement

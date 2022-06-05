@@ -1,8 +1,7 @@
 import homeImg from '../assets/home.jpg'
 import data from '../assets/data.json'
 import '../styles/Home.css'
-import {Link} from "react-router-dom";
-import Appartement from "../components/Appartement";
+import CardApartement from "../components/CardApartement";
 
 function Home(){
     return(
@@ -13,7 +12,7 @@ function Home(){
             </div>
             <div className="page-home-list">
                 {data.map((item, index) => (
-                    <Appartement item={item} index={index}/>
+                    <CardApartement item={item} index={index} key={index}/>
                 ))}
             </div>
 

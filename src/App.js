@@ -1,13 +1,13 @@
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Header from "./Header";
+import Header from "./components/Header";
 import React from "react";
-import Footer from "./Footer";
-import Error from "../pages/Error";
-import Home from  "../pages/Home"
-import About from "../pages/About";
-import Apartment from "../pages/Apartment";
-import "../styles/App.css"
+import Footer from "./components/Footer";
+import Error from "./pages/Error";
+import Home from "./pages/Home"
+import About from "./pages/About";
+import Apartment from "./pages/Apartment";
+import "./styles/App.css"
 
 function App() {
   return (
