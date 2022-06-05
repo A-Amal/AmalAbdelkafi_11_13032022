@@ -96,12 +96,12 @@
 
     }
     .page-home-list{
-        width: 90%;
+        width: 91%;
     }
     .card{
         width: 335px;
-        height: 255px;
-        margin: 14px 0;
+        height: 270px;
+        margin: 0 0 20px 0;
     }
 }
 

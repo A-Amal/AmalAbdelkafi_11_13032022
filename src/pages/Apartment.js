@@ -69,7 +69,7 @@ function Apartment(){
                     <div className="apartment-content">
                         <div className="apartment-content-description">
                             <Dropdown title="Description">
-                                {description}
+                                {description && description}
                             </Dropdown>
                         </div>
                         <div className="apartment-content-equipments">
